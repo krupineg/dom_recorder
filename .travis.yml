@@ -23,9 +23,8 @@ after_script:
 before_deploy: 
 deploy:
   provider: releases
-  api_key:
-    secure: $API_KEY_SECURE
-  file: $FILE_TO_UPLOAD
+  api_key: ${API_KEY_SECURE}
+  file: ${FILE_TO_UPLOAD}
   on:
-    repo: $REPO_NAME
+    repo: ${REPO_NAME}
 after_deploy: 
