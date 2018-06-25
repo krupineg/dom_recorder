@@ -24,9 +24,8 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: hfndW8GQ+rF9yO8F7izh0RHQnbF+Mx4+5jfhiT7xswLBkHazfxRo3KBFQJDLzGbfdUo83HVS7YBSCEce4qbTasKMSsAnFdwpmcNCWP379opRbgIXyVKm21oo7BIBdwgBgFMyfm8tCtIIsZgr7F+M8ihfUzkeGPSsWgt3GX627Phic9Ghkgq1ANEyWKt9u12CxFJ1xTtX/Qcm8Ex5/1ApeFBdsag7neTkfYU1ilPxBR3OCAPNAexb2Iuqh/Jlej8hQ+T/wXFkx/1spFVf81uW1H1uxLeB+QoM064hvGfBuuWlzZ/WbRUCVirbsRqb5lagBJzYqMofGR0ZyHGT2iYI5525S9hrIWb+qcMUrSlTfXc01dDVV7+w8K2nxQEf/aIksrusjCXIAT1CBigp6pJ6BAl27TjvZ2H60O8KCmCMOf2q7t7m9osnH7OeZ2Q/DB4ymHxClKu2vCPzThzbFQ1bw8SWlOvqIeB2PCIsGn7/6KiNTykzImmSIbIEVW2BsyEr10pekFOUhH/zed9KLJhr/5TXnyjH3tSkQ1t39y60fEwtbymhCykxB0QQoLvAVNlOKO9k59UGHPsjAVS4Tfdg1xl8O1kP7cB96ZOTRcFWAVJHErP+ibjtycEcp7ACmxKQLQbEmjcyIz+3zqyFCPTTzDpdEnjx1Nt96pGvOmLIrRs=
-  file: 
-    - "dist/dom-recorder.js"
+    secure: $API_KEY_SECURE
+  file: $FILE_TO_UPLOAD
   on:
-    repo: krupineg/dom_recorder
+    repo: $REPO_NAME
 after_deploy: 
