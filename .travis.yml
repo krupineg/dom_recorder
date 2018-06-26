@@ -28,5 +28,7 @@ deploy:
   file: ${FILE_TO_UPLOAD}
   on:
     repo: ${REPO_NAME}
-    tags: true
+    tags: true    
+    all_branches: true
+    name: v${TRAVIS_BUILD_NUMBER}.${TRAVIS_BRANCH}.${TRAVIS_BUILD_ID}"
 after_deploy: 

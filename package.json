@@ -18,7 +18,11 @@
   },
   "watch": {
     "build": {
-      "patterns": [ "src", "test", "." ],
+      "patterns": [
+        "src",
+        "test",
+        "."
+      ],
       "extensions": "js,jsx",
       "quiet": true,
       "legacyWatch": true,
