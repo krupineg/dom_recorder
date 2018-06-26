@@ -24,7 +24,9 @@ before_deploy:
 deploy:
   provider: releases
   api_key: ${API_KEY_SECURE}
+  skip_cleanup: true
   file: ${FILE_TO_UPLOAD}
   on:
     repo: ${REPO_NAME}
+    tags: true
 after_deploy: 
